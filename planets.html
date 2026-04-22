@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космическое путешествие - Планеты</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .planet {
+            border: 2px solid #4a4a4a;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+            background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
+            display: flex;
+            align-items: start;
+            gap: 20px;
+        }
+        
+        .planet img {
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(100, 150, 255, 0.5);
+            min-width: 150px;
+        }
+        
+        .planet-info h2 {
+            color: #64b5f6;
+            margin-top: 0;
+        }
+        
+        .planet-info p {
+            margin: 10px 0;
+        }
+        
+        .planet-facts {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        
+        .planet-facts strong {
+            color: #ffd54f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О космосе</a></li>
+                <li><a href="planets.html">Планеты</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>🪐 Планеты Солнечной системы</h1>
+        
+        <div class="planet">
+            <img src="images/earth.jpg" alt="Земля" width="180">
+            <div class="planet-info">
+                <h2>Земля</h2>
+                <p><strong>Тип:</strong> Планета земной группы</p>
+                <p>Наш дом — единственная известная планета во Вселенной, на которой существует жизнь. 
+                Земля расположена в «обитаемой зоне» Солнца, где вода может существовать в жидком состоянии.</p>
+                <div class="planet-facts">
+                    <p><strong>Расстояние от Солнца:</strong> 149.6 млн км</p>
+                    <p><strong>Диаметр:</strong> 12,742 км</p>
+                    <p><strong>Спутники:</strong> 1 (Луна)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="planet">
+            <img src="images/mars.jpg" alt="Марс" width="180">
+            <div class="planet-info">
+                <h2>Марс</h2>
+                <p><strong>Тип:</strong> Планета земной группы</p>
+                <p>«Красная планета» названа так из-за оксида железа на поверхности. Марс — главная цель 
+                для будущих пилотируемых миссий. Здесь находится самая высокая гора в Солнечной системе — 
+                вулкан Олимп (21 км).</p>
+                <div class="planet-facts">
+                    <p><strong>Расстояние от Солнца:</strong> 227.9 млн км</p>
+                    <p><strong>Диаметр:</strong> 6,779 км</p>
+                    <p><strong>Спутники:</strong> 2 (Фобос и Деймос)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="planet">
+            <img src="images/jupiter.jpg" alt="Юпитер" width="180">
+            <div class="planet-info">
+                <h2>Юпитер</h2>
+                <p><strong>Тип:</strong> Газовый гигант</p>
+                <p>Самая большая планета Солнечной системы. Юпитер более чем в два раза массивнее всех 
+                остальных планет вместе взятых. Знаменит своим «Большим красным пятном» — гигантским штормом, 
+                который бушует уже более 350 лет.</p>
+                <div class="planet-facts">
+                    <p><strong>Расстояние от Солнца:</strong> 778.5 млн км</p>
+                    <p><strong>Диаметр:</strong> 139,820 км</p>
+                    <p><strong>Спутники:</strong> 95 (включая Ио, Европу, Ганимед, Каллисто)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="planet">
+            <img src="images/saturn.jpg" alt="Сатурн" width="180">
+            <div class="planet-info">
+                <h2>Сатурн</h2>
+                <p><strong>Тип:</strong> Газовый гигант</p>
+                <p>Вторая по величине планета, знаменита своей великолепной системой колец, состоящих из 
+                льда и камней. Сатурн настолько легкий, что мог бы плавать в воде (если бы нашелся океан 
+                достаточно большой).</p>
+                <div class="planet-facts">
+                    <p><strong>Расстояние от Солнца:</strong> 1.43 млрд км</p>
+                    <p><strong>Диаметр:</strong> 116,460 км</p>
+                    <p><strong>Спутники:</strong> 146 (включая Титан и Энцелад)</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Космическое путешествие. Образовательный проект.</p>
+    </footer>
+</body>
+</html>
