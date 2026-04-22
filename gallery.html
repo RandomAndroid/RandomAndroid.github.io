@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космическое путешествие - Галерея</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .gallery-item {
+            background: #1e1e2e;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(100, 150, 255, 0.4);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .gallery-item p {
+            padding: 15px;
+            margin: 0;
+            text-align: center;
+            color: #64b5f6;
+            font-weight: bold;
+        }
+        
+        .gallery-section {
+            margin: 40px 0;
+        }
+        
+        .gallery-section h2 {
+            color: #ffd54f;
+            border-bottom: 2px solid #4a4a4a;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О космосе</a></li>
+                <li><a href="planets.html">Планеты</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>🌟 Космическая галерея</h1>
+        
+        <div class="gallery-section">
+            <h2>Планеты</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/earth.jpg" alt="Земля из космоса">
+                    <p>Голубая планета — Земля</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/mars.jpg" alt="Поверхность Марса">
+                    <p>Красная планета — Марс</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/jupiter.jpg" alt="Юпитер">
+                    <p>Газовый гигант — Юпитер</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/saturn.jpg" alt="Сатурн с кольцами">
+                    <p>Властелин колец — Сатурн</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section">
+            <h2>Космические явления</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/space1.jpg" alt="Туманность">
+                    <p>Великолепная туманность</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/space2.jpg" alt="Галактика">
+                    <p>Спиральная галактика</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/space3.jpg" alt="Звездное небо">
+                    <p>Млечный Путь</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Космическое путешествие. Образовательный проект.</p>
+    </footer>
+</body>
+</html>
